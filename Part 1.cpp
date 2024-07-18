@@ -1,7 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
 
 int main(){
 
@@ -53,7 +51,11 @@ int main(){
 	a>b;   //Compara los valores de ambas variables y verifica si a es mayor que b
 	a<b;   //Compara los valores de ambas variables y verifica si a es menor que b
 	a>=b;  //Compara los valores de ambas variables y verifica si a es mayor o igual que b
-	a<=b;  //Compara los valores de ambas variables y verifica si a es manor o igual que b
+	a<=b;  //Compara los valores de ambas variables y verifica si a es menor o igual que b
+
+	//Operadores Logicos
+	AND = a&&b;   //Devuelve Verdadero cuando ambas condiciones son verdaderas el resto de casos es falso(Tambien se entiende como: Si 'a' Y 'b' = True -> entonces True)
+	OR = a||b;    //Devuelve Verdadero cuando una de las condiciones sea verdaderas(Tambien se entiende como: Si 'a' O 'b' = True -> entonces True)
 		
 	//Condicionales
 
@@ -81,7 +83,7 @@ int main(){
     cin>>opcion;
 
     //Iniciamos estructura
-    switch (opcion){//Variable a comparar {
+    switch (opcion){//Variable a comparar
     	//Compara caso a caso.
     	case 1:
         	cout << "Elegiste la opción 1." << endl;
@@ -97,29 +99,28 @@ int main(){
         	break;
     }
 
-
     //Ciclos o Bucles, Estructuras repetitivas
 
     //Ciclo for, se repite una cantidad definida de veces
 
-    //    Variable de control    	Condicion    Incrementamos su valor para alcanzar el objetivo
-    for (     int i = 0       ;    i < 5      ;                   i++                  ) {
-    cout<<"Iteración "<<i<<endl;//Condigo a ejecutar
+    
+    for (int i = 0; i<5; i++) {    //Variable de control | Condicion | Incrementamos su valor para alcanzar el objetivo
+    cout<<"Iteración "<<i<<endl;   //Condigo a ejecutar
     }
 
 
     //Bucle While, se ejecuta hasta que se cumpla la condicion de parada. (Piensa, luego ejecuta)
-    int n=0;//Declaramos variable de control de manera externa
-    while (n<5) {//Condicion
-    cout << "Iteracion hasta 5." <<endl;//Codigo
-    n++;//Aumentamos la variable de control internamente
+    int iteracion=0;                           //Declaramos variable de control de manera externa
+    while (iteracion<5) {                      //Condicion
+    cout << "Iteracion hasta 5." <<endl;       //Codigo
+    iteracion++;                               //Aumentamos la variable de control internamente
     }
 
 
     //Bucle Do While, se ejecuta hasta quese cumpla la condicion de parada. (Ejecuta, luego piensa) 
     int condicion=0;
     do {
-    	condicion=2*n;
+    	condicion=2*iteracion;
     } while (condicion>100);
     cout<<condicion<<endl;
 
