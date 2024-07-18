@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sqlite3.h>
-//Working with databases
+
 using namespace std;
 
 // Función para conectarse a la base de datos
