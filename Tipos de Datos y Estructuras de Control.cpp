@@ -18,7 +18,7 @@ int main(){
 	double real           =  31415674598;    //Numeros de Precision doble o mayores a 16 bits
 	char caracter         =  'f';            //Caracteres Alfanumericos{a,b,c,d,f,g,1,2,3,4,5,A,B,C,} etc
 	bool booleano         =  true;           //Condiciones de Verdadero o Falso
-	string cadena         =  "candela";      //Tipo de dato compuesto capaz de almacenar textos(cadenas de caracteres) 
+	string cadena         =  "texto";      //Tipo de dato compuesto capaz de almacenar textos(cadenas de caracteres) 
 
 	//Datos Compuestos
 
