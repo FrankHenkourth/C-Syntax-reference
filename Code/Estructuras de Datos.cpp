@@ -1,3 +1,4 @@
+#include <list>
 //Listas Simplemente Enlazadas (SE)
 
 // Definición del nodo
